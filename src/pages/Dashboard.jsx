@@ -75,7 +75,7 @@ const Dashboard = () => {
                     <div className="bg-gray-900 p-6 rounded-lg border border-gray-800 flex items-center justify-between">
                         <div>
                             <h3 className="text-lg font-semibold text-blue-400">Create Infrastructure</h3>
-                            <p className="text-gray-400 text-sm mt-1">POST /ecs/create</p>
+                            {/* <p className="text-gray-400 text-sm mt-1">POST /ecs/create</p> */}
                             <p className="text-gray-500 text-xs mt-1">Provisions new ECS clusters and definitions.</p>
                         </div>
                         <Button onClick={() => confirmAction('create')} disabled={loading}>
@@ -87,7 +87,7 @@ const Dashboard = () => {
                     <div className="bg-gray-900 p-6 rounded-lg border border-gray-800 flex items-center justify-between">
                         <div>
                             <h3 className="text-lg font-semibold text-green-400">Start Services</h3>
-                            <p className="text-gray-400 text-sm mt-1">POST /ecs/start-services</p>
+                            {/* <p className="text-gray-400 text-sm mt-1">POST /ecs/start-services</p> */}
                             <p className="text-gray-500 text-xs mt-1">Boots all defined services on the cluster.</p>
                         </div>
                         <Button variant="secondary" onClick={() => confirmAction('start')} disabled={loading}>
@@ -99,7 +99,7 @@ const Dashboard = () => {
                     <div className="bg-gray-900 p-6 rounded-lg border border-red-900/30 flex items-center justify-between">
                         <div>
                             <h3 className="text-lg font-semibold text-red-500">Delete Infrastructure</h3>
-                            <p className="text-gray-400 text-sm mt-1">POST /ecs/delete</p>
+                            {/* <p className="text-gray-400 text-sm mt-1">POST /ecs/delete</p> */}
                             <p className="text-gray-500 text-xs mt-1">Terminates all tasks and deletes the cluster.</p>
                         </div>
                         <Button variant="danger" onClick={() => confirmAction('delete')} disabled={loading}>
